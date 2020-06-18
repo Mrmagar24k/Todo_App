@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+
+
+
+    <item
+        android:id="@+id/add_item_id"
+        android:title="add"
+        android:icon = "@drawable/ic_add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+    android:id="@+id/prt"
+    android:icon="@drawable/ic_event_note_black_24dp"
+    android:title="PRIORITY"
+    app:showAsAction="always|collapseActionView">
+    <menu>
+        <item
+            android:id="@+id/all"
+            android:title="ALL PRIORITY"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/high"
+            android:title="HIGH PRIORITY"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/medium"
+            android:title="MEDIUM PRIORITY"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/low"
+            android:title="LOW PRIORITY"
+            app:showAsAction="never"/>
+    </menu>
+</item>
+
+    <item android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title="Main menu"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Exit"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/black"
+                android:title="Drak Mode"
+                android:icon="@drawable/ic_brightness_6_black_24dp"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/org"
+                android:title="Off Mode"
+                android:icon="@drawable/ic_brightness_5_black_24dp"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

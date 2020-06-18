@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This layout defines the main activity screen and displays a listtaskEntriesasks (if they exist),
+    and a floating action button that launches another activity.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="123dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="288dp"
+                    android:background="#00303F9F"
+                    android:text="Clear All"
+                    android:textColor="#C6A709"/>
+                <!-- RecyclerView that is responsible for holding a listtaskEntrytask data -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewTasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingBottom="80dp"
+                    android:layout_marginTop="40dp"/>
+                <!-- Floating action button that launches AddTaskActivity when clicked -->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add"
+                    android:tint="@android:color/white"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2E2D2D</item>
+        <item name="colorPrimaryDark">#FF2E2D2D</item>
+        <item name="colorAccent">#AA00FF</item>
+    </style>
+
+    <!-- Style for custom white radio button color -->
+    <style name="WhiteRadioButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#AA00FF</item>
+
+    </style>
+</resources>
